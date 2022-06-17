@@ -1,0 +1,4 @@
+* 프론트에서 만들어지는 폴더들
+ 1 image == img
+ 2 css
+ 3 js(.js and jquery.js)
