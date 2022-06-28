@@ -6,6 +6,8 @@ Object.defineProperty(user, "age", {
     },
     set:function(age){
         if(age < 0){
+            console.error('0보다 작은값은 올 수 없습니다.');
+        }else{
             this._age = age;
         }
     },
@@ -18,13 +20,13 @@ user.age = -1;
 
 let user2 = {
     get name(){
-        return this.name;
+        return this._name;
     },
     set name(val){
         if(val.length < 3){
             throw new Error('3자 이상이어야 합니다.');
         }
-        this.name = val;
+        this._name = val;
     }
 }
 user2.name = 'harin';
