@@ -1,4 +1,6 @@
 // 클로저 이해하기
+// increase함수와 getCount 함수는 createCounterCourse 실행 컨텍스트의
+// 렉시컬 환경을 기억하고 있는 클로저가 됨.
 function createCounterCourse(){
     let count = 0;
     return{

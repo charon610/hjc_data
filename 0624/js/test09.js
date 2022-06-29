@@ -27,8 +27,8 @@ let printMembers = function(){
 printMembers();
 
 let members = family.members;
-members['nephew'] = {age:3, name: 'hyun'};
-members.niece = {age:5, name:'lyn'};
-delete members.aunt;
-delete members['dog'];
+members['nephew'] = {age:3, name: 'hyun'}; // 삽입
+members.niece = {age:5, name:'lyn'};  // 수정
+delete members.aunt;  // 삭제
+delete members['dog'];  // 삭제
 printMembers();
